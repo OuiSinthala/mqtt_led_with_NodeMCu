@@ -6,9 +6,9 @@ const char* ssid = "wifiname";
 const char* password = "wifipas";
 
 // MQTT broker information
-const char* mqtt_server = "serverip"; // broker.hivemq.com or broker.mqttdashboard.com
+const char* mqtt_server = "serverip"; // broker.hivemq.com or broker.mqttdashboard.com or any broker(server)
 const uint16_t mqtt_port = 1883;
-const char* mqtt_topic = "iot/workshop"; // topic name (can be anything)
+const char* mqtt_topic = "topic"; // topic name (can be anything)
 
 // Creating objects
 WiFiClient wifiClient;
