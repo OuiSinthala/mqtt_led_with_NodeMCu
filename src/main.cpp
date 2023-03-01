@@ -58,6 +58,7 @@ void wifiConnection() {
 void mqttReconnection() {
   while (!mqttClient.connected()) {
     Serial.print("Connecting to MQTT broker...");
+    // getting clientID as the nodeMCU's mac address
     String clientId = "esp8266-" + WiFi.macAddress();
     if (mqttClient.connect(clientId.c_str())) {
       Serial.println("connected");
